@@ -1,0 +1,23 @@
+[book]
+title = "MdBook Example"
+authors = ["jasenmichael"]
+description = "The example book covers examples."
+src = "docs"
+language = "en"
+multilingual = true
+
+[build]
+create-missing = false
+use-default-preprocessors = true
+build-dir = "dist"
+
+[output.html]
+--cname = "docs.pop-os.org"
+default-theme = "light"
+preferred-dark-theme = "midnight"
+additional-css = ["theme/css/fonts.css", "theme/css/colors.css"]
+additional-js = ["theme/main.js"]
+git-repository-url = "https://github.com/jasenmichael/mdbook-gh-pages-starter"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/jasenmichael/mdbook-gh-pages-starter/edit/master/{path}"
+input-404 = "not-found.md"
